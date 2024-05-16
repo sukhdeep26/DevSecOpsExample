@@ -12,9 +12,6 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
-      with: 
-        repository: sukhdeep26/DevSecOpsExample
-        path: DevSecOpsExample
 
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -30,4 +27,4 @@ jobs:
       run: pytest
 
     - name: Code Scanning
-      uses: github/codeql-action@v2
+      uses: github/codeql-action/init@v2
