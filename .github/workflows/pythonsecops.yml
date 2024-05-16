@@ -27,4 +27,4 @@ jobs:
       run: pytest
 
     - name: Code Scanning
-      uses: github/codeql-action/init@v2
+      uses: github/codeql-action@v2
